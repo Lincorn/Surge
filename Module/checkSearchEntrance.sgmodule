@@ -2,7 +2,7 @@
 #!desc=修改小说APP搜索入口接口返回
 
 [Script]
-checkSearchEntrance = type=http-response, pattern=^https:\/\/api\.miaoxiaole\.com\/book\/user\/checkSearchEntrance, script-path=checkSearchEntrance.js, requires-body=true, max-size=-1, timeout=60
+checkSearchEntrance = type=http-response, pattern=^https:\/\/api\.miaoxiaole\.com\/book\/user\/checkSearchEntrance, script-path=https://raw.githubusercontent.com/Lincorn/Surge/refs/heads/main/js/checkSearchEntrance.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
 hostname = %APPEND% api.miaoxiaole.com
